@@ -1,0 +1,33 @@
+@import url("./boilerplate.css");
+@import url("./Table.css");
+
+body {
+    display: flex;
+    justify-content: center;
+    background: rgb(38,82,142);
+    background: linear-gradient(0deg, rgba(38,82,142,1) 0%, rgba(142,170,180,1) 50%); 
+}
+
+h1 {
+    margin: 40px 20px 20px 20px;
+}
+
+@media screen and (max-width: 1060px) {
+    .table-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    table {
+        width: 350px;
+    }
+
+    .sub {
+        margin-top: 20px;
+    }
+}
