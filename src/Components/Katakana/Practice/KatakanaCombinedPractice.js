@@ -3,7 +3,7 @@ import React from 'react'
 const KatakanaCombinedPractice = () => {
   return (
     <table>
-        <caption>Fill in the chart below with the correct Katakana character.</caption>
+        <caption>Katakana combined sounds practice</caption>
         <tbody>
             <tr>
                 <th className="darkcell"></th>
