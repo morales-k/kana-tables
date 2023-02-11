@@ -39,3 +39,11 @@ th {
 .darkcell {
     background-color: #efca86;
 }
+
+.practice-table td:not(.darkcell) {
+    background-color: #fff;
+}
+
+.practice-table td.darkcell, th.darkcell {
+    background-color: #505050;
+}
