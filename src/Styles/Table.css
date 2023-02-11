@@ -4,7 +4,7 @@
 
 caption {
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     font-size: 1.5rem;
 }
 
@@ -33,7 +33,7 @@ td {
 
 th {
     background-color: #505050;
-    color: #ffffff;
+    color: #e8e8e8;
 }
 
 .darkcell {
@@ -41,7 +41,7 @@ th {
 }
 
 .practice-table td:not(.darkcell) {
-    background-color: #fff;
+    background-color: #e8e8e8;
 }
 
 .practice-table td.darkcell, th.darkcell {
