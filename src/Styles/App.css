@@ -34,3 +34,37 @@ body {
         margin-top: 20px;
     }
 }
+
+@media print {
+    nav, #printBtn {
+        display: none;
+    }
+
+    .practice-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        height: 70vh;
+        margin: 0;
+        margin-bottom: 200px;
+        page-break-after: always;
+    }
+
+    .k-sounds-practice {
+        margin-bottom: 60px;
+    }
+
+    .practice-table:last-of-type table:last-of-type {
+        margin-bottom: 0;
+    }
+
+    th {
+        color: #000;
+    }
+
+    th, td {
+        border: 2px solid #000;
+    }
+}

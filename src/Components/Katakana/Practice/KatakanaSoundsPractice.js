@@ -2,7 +2,7 @@ import React from 'react'
 
 const KatakanaSoundsPractice = () => {
   return (
-    <table>
+    <table className="k-sounds-practice">
         <caption>Katakana sounds practice</caption>
         <tbody>
             <tr>
