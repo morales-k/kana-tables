@@ -1,14 +1,11 @@
 @import url("./boilerplate.css");
 @import url("./Nav.css");
 @import url("./Table.css");
+@import url("./PrintButton.css");
 
 body {
     background: rgb(38,82,142);
     background: linear-gradient(0deg, rgba(38,82,142,1) 0%, rgb(57, 137, 166) 50%);
-}
-
-h1 {
-    margin: 60px 20px 20px 20px;
 }
 
 #appContainer {
@@ -25,6 +22,10 @@ h1 {
 }
 
 @media screen and (max-width: 520px) {
+    nav ul {
+        font-size: 1rem;
+    }
+
     h1 {
         font-size: 1.4rem;
     }
@@ -35,5 +36,39 @@ h1 {
 
     .sub {
         margin-top: 20px;
+    }
+}
+
+@media print {
+    nav, #printBtn {
+        display: none;
+    }
+
+    .practice-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        height: 70vh;
+        margin: 0;
+        margin-bottom: 200px;
+        page-break-after: always;
+    }
+
+    .k-sounds-practice {
+        margin-bottom: 60px;
+    }
+
+    .practice-table:last-of-type table:last-of-type {
+        margin-bottom: 0;
+    }
+
+    th {
+        color: #000;
+    }
+
+    th, td {
+        border: 2px solid #000;
     }
 }

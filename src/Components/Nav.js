@@ -1,18 +1,18 @@
 import React from 'react'
 
-const Nav = () => {
-  return (
-    <nav>
-        <ul>
-            <li>Kana charts</li>
-            <li>Hiragana charts</li>
-            <li>Katakana charts</li>
-            <li>Hiragana practice</li>
-            <li>Katakana practice</li>
-            <li>Practice charts</li>
-        </ul>
-    </nav>
-  )
+const Nav = (props) => {
+	const { setChart } = props;
+
+	return (
+		<nav>
+			<ul>
+				<li onClick={() => setChart(0)}>Kana charts</li>
+				<li onClick={() => setChart(1)}>Hiragana charts</li>
+				<li onClick={() => setChart(2)}>Katakana charts</li>
+				<li onClick={() => setChart(3)}>Practice charts</li>
+			</ul>
+		</nav>
+	)
 }
 
 export default Nav;

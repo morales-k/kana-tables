@@ -1,11 +1,15 @@
 nav {
     width: 100vw;
-    background-color: #505050;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px ridge #505050;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
+    text-align: center;
     list-style-type: none;
     font-size: 1.2rem;
     padding-top: 20px;

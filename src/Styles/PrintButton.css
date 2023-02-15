@@ -1,0 +1,47 @@
+#printBtn {
+    width: 60px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    letter-spacing: 0.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    border: none;
+    background-color: #1E3E59;
+    color: #f2f2f2;
+    box-shadow: 0 2px 2px rgba(155, 155, 155, 0.8);
+}
+
+#printBtn::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: rgb(107, 163, 187);
+}
+
+#printBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(155, 155, 155, 0.8);
+    cursor: pointer;
+}
+
+#printBtn:hover::after {
+    height: 100%;
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    background-color: rgb(107, 163, 187);
+}
+
+#printBtn:active {
+    box-shadow: 0 0 2px rgba(155, 155, 155, 0.8);
+}
